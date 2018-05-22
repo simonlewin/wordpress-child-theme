@@ -11,3 +11,27 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-sixteen-child
 */
+
+/* This changes the text colour of all of the Home page content (inc. widgets) to red
+.home {
+	color: red;
+}
+*/
+
+/* This changes the text colour of the whole of the Home page entry content (inc. header) to red 
+.post-27 {
+	color: red;	
+}
+*/
+
+/* This changes the text colour of the Home page entry content (and header) to red 
+.home .page {
+	color: red;	
+}
+*/
+
+/* This changes the text colour of the Home page entry content (only) to red  */
+/* The exercise was to change the text colour of the page content to red */
+.home .entry-content {
+	color: red;	
+}
