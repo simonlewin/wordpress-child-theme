@@ -19,6 +19,38 @@
 		<?php
 		the_content();
 
+		?> <!-- ACF for phone number -->
+
+		<?php 
+		if (get_field('phone_number')) { ?>
+    		<h2> <?php the_field('phone_number')?> </h2>
+
+    	<?php } //<!-- ACF for phone number -->
+
+    	// ACF for Company page
+
+		if (get_field('company_name')) { ?>
+    		<h3> <?php the_field('company_name')?> </h3>
+    	<?php } 
+
+		if (get_field('telephone_number')) { ?>
+    		<h3> <?php the_field('telephone_number')?> </h3>
+    	<?php }
+
+		if (get_field('contact_email_address')) { ?>
+    		<h3> <?php the_field('contact_email_address')?> </h3>
+    	<?php }
+
+		if ( get_field('company_logo') ) { ?>
+			<img src="<?php the_field('company_logo') ?>" />
+		<?php }
+
+		if (get_field('postal_address')) { ?>
+    		<h3> <?php the_field('postal_address')?> </h3>
+    	<?php }
+
+    	//<!-- ACF for Company page -->
+
 		wp_link_pages( array(
 			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
 			'after'       => '</div>',
